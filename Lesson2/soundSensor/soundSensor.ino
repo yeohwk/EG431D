@@ -1,4 +1,4 @@
-#define SOUND_SENSOR A2           // Grove - Sound Sensor connects to Arduino Analog A2 Port
+#define SOUND_SENSOR A2           // Sound Sensor connects to Arduino Analog A2 Port
 
 void setup()
 {

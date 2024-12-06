@@ -3,8 +3,8 @@
 #include <WiFiNINA.h>               // WiFi Library
 #include <Digital_Light_TSL2561.h>  // Digital Light Sensor Library
 #include "ThingSpeak.h"             // Always include thingspeak header file after other header files
-#define TEMP_SENSOR  A1             // Grove - Temperature Sensor connects to Analog Port A1
-#define SOUND_SENSOR A2             // Grove - Sound Sensor connects to Arduino Analog A2 Port
+#define TEMP_SENSOR  A1             // Temperature Sensor connects to Analog Port A1
+#define SOUND_SENSOR A2             // Sound Sensor connects to Arduino Analog A2 Port
 const int B  = 4275;                // B value of the thermistor (from Datasheet)
 const int R0 = 100000;              // R0 = 100k
 int Temperature = 0;                // Temperature Sensor
@@ -30,7 +30,6 @@ void setup() {
     }    
     ThingSpeak.begin(client);                       // Initialize ThingSpeak
 }
-
 void loop() {
     if(WiFi.status() != WL_CONNECTED)               // Connect or reconnect to WiFi
     {
