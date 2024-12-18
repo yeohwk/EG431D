@@ -1,6 +1,6 @@
 #include "Seeed_AMG8833_driver.h"
-// Initialize an AMG8833 TSA instance
-AMG8833 sensor;
+// Initialize an AMG8833 TSA instance (use address 0x68 or 0x69) 
+AMG8833 sensor(0x69);
 
 void setup() {
     Serial.begin(115200);
