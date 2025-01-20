@@ -11,7 +11,7 @@
 #define VIBR_THRESHOLD    1.9   // Vibration Threshold (g)
 
 rgb_lcd lcd;                    // Initialize LCD instance
-AMG8833 tsa;                    // Initialize AMG8833 instance of the  AMG8833 TSA library
+AMG8833 tsa(0x69);              // Initialize AMG8833 instance of the  AMG8833 TSA library
 ADXL345 adxl;                   // Initialize ADXL345 instance of the ADXL345 Accelerometer library       
 
 unsigned int getSoundLevel(char analogPort)

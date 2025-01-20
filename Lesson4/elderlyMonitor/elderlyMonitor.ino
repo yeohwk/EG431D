@@ -16,7 +16,7 @@
 #define HUMIDITY_THRESHOLD    50
 
 rgb_lcd lcd;                            // Initialize LCD instance
-AMG8833 tsa;                            // Initialize AMG8833 instance of the  AMG8833 TSA library
+AMG8833 tsa(0x69);                      // Initialize AMG8833 instance of the  AMG8833 TSA library
 float co2th[3] = {0};                   // CO2, Ambient Temp and Humidity Values.
 unsigned long loopTimeBegin   = 0;      // Time variable - for use in loop ()
 unsigned long loopTimeElapsed = 0;      // Time variable - for use in loop ()
