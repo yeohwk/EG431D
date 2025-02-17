@@ -1,0 +1,24 @@
+auto wifiCreds   = WifiCredentials("ORION", "0ri0n@nyP");         // Your WiFi Network Name and Password
+auto deviceCreds = DeviceConfig("kkNSBrMvfRkSBo77vpDWssXI", "maker:4pooqIihdq3BmsX5MTWmFqv9KQTwnYtG55Y4GX5K");       // Go to AllThingsTalk Maker > Devices > Your Device > Settings > Authentication to get your Device ID and Token
+auto device      = Device(wifiCreds, deviceCreds);                // Create "device" object
+
+
+unsigned long myChannelNumber = 2759498;            // Replace 0000000 with your channel number
+const char * myWriteAPIKey    = "IHC9TIQ325MKA1KS"; // Replace WRITE_APIKEY with your channel write API Key
+char ssid[]  = "ORION";                             // Replace MYSSID with your WiFi network name
+char pass[]  = "0ri0n@nyP";                         // Replace MYPASSWORD with your WiFi password
+
+unsigned long myChannelNumber = 0000000;            // Replace 0000000 with your channel number
+const char * myWriteAPIKey    = "WRITE_APIKEY";     // Replace WRITE_APIKEY with your channel write API Key
+char ssid[]  = "MYSSID";                            // Replace MYSSID with your WiFi network name
+char pass[]  = "MYPASSWORD";                        // Replace MYPASSWORD with your WiFi password
+
+
+SSID: ORION@HDB
+Password: 0ri0n@nyP
+Gateway: 192.168.0.254
+Network Address: 192.168.0.x
+
+auto wifiCreds   = WifiCredentials("ORION@HDB", "0ri0n@nyP");   // Your WiFi Network Name and Password
+auto deviceCreds = DeviceConfig("kkNSBrMvfRkSBo77vpDWssXI", "maker:4pooqIihdq3BmsX5MTWmFqv9KQTwnYtG55Y4GX5K");
+//auto deviceCreds = DeviceConfig("DeviceID", "DeviceToken");       // Go to AllThingsTalk Maker > Devices > Your Device > Settings > Authentication to get your Device ID and Token
